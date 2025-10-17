@@ -22,9 +22,12 @@ A **Java Swing-based application** that allows users to register students, valid
 
 <img width="419" height="502" alt="s1" src="https://github.com/user-attachments/assets/4d881bd4-9cc3-43d5-9576-e3877f73af4d" />
 <img width="429" height="510" alt="s2" src="https://github.com/user-attachments/assets/7691d1fd-ec23-4fd8-b4f6-935b3a84e210" />
+
 ---
 
 ## Database Setup
+
+<img width="1470" height="956" alt="mySQL2" src="https://github.com/user-attachments/assets/18b3647d-c424-466b-9ee4-63fcf955bb4b" />
 
 ```sql
 -- Create database if it doesn't exist
@@ -34,10 +37,6 @@ CREATE DATABASE IF NOT EXISTS studentDB;
 USE studentDB;
 
 -- Create students table
-CREATE DATABASE IF NOT EXISTS studentDB;
-
-USE studentDB;
-
 CREATE TABLE IF NOT EXISTS students (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -46,8 +45,8 @@ CREATE TABLE IF NOT EXISTS students (
     email VARCHAR(50) NOT NULL
 );
 
-SELECT * FROM students
+-- Check data
+SELECT * FROM students;
 
 
-<img width="1470" height="956" alt="mySQL2" src="https://github.com/user-attachments/assets/77179df1-ac20-410c-a988-8d9679e102c4" />
 
